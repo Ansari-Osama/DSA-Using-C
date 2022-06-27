@@ -1,14 +1,14 @@
-// WAP to Print Sum of N Natural Numbers.
+// WAP to print Sum of N Natural Numbers.
 
 #include <stdio.h>
 void main()
 {
     int n, sum = 0;
-    printf("Enter the Number till you want Sum: ");
+    printf("\n Enter the Number till you want to Find Sum: ");
     scanf("%d", &n);
     for (int i = 1; i <= n; i++)
     {
-        sum += i;
+        sum = sum + i;
     }
-    printf("\n The Sum from 1 to %d is %d", n, sum);
+    printf("\n Sum from 1 to %d is %d", n, sum);
 }
