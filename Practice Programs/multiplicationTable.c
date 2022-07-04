@@ -1,4 +1,4 @@
-// WAP to Print Multiplication Table of a Given Number.
+// // WAP to Print Multiplication Table of a Given Number.
 
 #include <stdio.h>
 void main()
