@@ -3,9 +3,11 @@
 
 #include <stdio.h>
 
-int calculatePerimeterOfRectangle(int length, int width)
+int calculatePerimeterOfRectangle(float length, float width);
+
+int calculatePerimeterOfRectangle(float length, float width)
 {
-    int perimeter = 2 * (length + width);
+    float perimeter = 2 * (length + width);
     return perimeter;
 }
 
