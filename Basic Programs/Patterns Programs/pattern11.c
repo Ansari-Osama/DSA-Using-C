@@ -1,9 +1,8 @@
 /*
-WAP to print the following patterns.
-1
-2 2
-3 3 3
-4 4 4 4
+WAP to print the following pattern.
+A A A
+B B B
+C C C
 */
 
 #include <stdio.h>
@@ -13,16 +12,13 @@ int main()
     int n;
     printf("\n Enter the Number of Rows: ");
     scanf("%d", &n);
-    int row = 1;
     for (int i = 0; i < n; i++)
     {
-        int column = 1;
-        for (int j = 0; j < row; j++)
+        for (int j = 0; j < n; j++)
         {
-            printf("%d  ", row);
-            // column += 1;
+            char ch = 'A' + i;
+            printf("%c  ", ch);
         }
-        row += 1;
         printf("\n");
     }
     return 0;

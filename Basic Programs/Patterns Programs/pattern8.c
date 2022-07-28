@@ -10,18 +10,18 @@ WAP to print the following patterns.
 
 int main()
 {
-    int row, col, count = 1;
+    int n, count = 1;
     printf("\n Enter the Number of Rows: ");
-    scanf("%d", &row);
-    printf("\n Enter the Number of Columns: ");
-    scanf("%d", &col);
-    for (int i = 0; i < row; i++)
+    scanf("%d", &n);
+    int row = 1;
+    for (int i = 0; i < n; i++)
     {
-        for (int j = 0; j < (i + 1); j++)
+        for (int j = 0; j < row; j++)
         {
             printf("%d  ", count);
-            count += 1;
+            count++;
         }
+        row += 1;
         printf("\n");
     }
     return 0;

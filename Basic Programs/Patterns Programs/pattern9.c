@@ -8,8 +8,7 @@ Relation = row + column - 1
 */
 
 #include <stdio.h>
-
-void main()
+int main()
 {
     int n, count = 1;
     printf("\n Enter the Number of Rows: ");
@@ -20,8 +19,9 @@ void main()
         for (int j = 0; j <= i; j++)
         {
             printf("%d  ", count);
-            count += 1;
+            count++;
         }
         printf("\n");
     }
+    return 0;
 }
