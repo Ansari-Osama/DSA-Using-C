@@ -10,17 +10,19 @@ Relation = row + column - 1
 #include <stdio.h>
 int main()
 {
-    int n, count = 1;
+    int n;
     printf("\n Enter the Number of Rows: ");
     scanf("%d", &n);
-    for (int i = 0; i < n; i++)
+    int row = 1;
+    while (row <= n)
     {
-        count = i + 1;
-        for (int j = 0; j <= i; j++)
+        int column = 1;
+        while (column <= row)
         {
-            printf("%d  ", count);
-            count++;
+            printf("%d  ", (row + column - 1));
+            column += 1;
         }
+        row += 1;
         printf("\n");
     }
     return 0;

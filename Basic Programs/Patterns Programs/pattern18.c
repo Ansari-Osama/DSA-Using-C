@@ -1,10 +1,9 @@
 /*
 WAP to print the following pattern.
-1
-2 1
-3 2 1
-4 3 2 1
-Relation = row - column + 1
+D
+C  D
+B  C  D
+A  B  C  D
 */
 
 #include <stdio.h>
@@ -20,7 +19,8 @@ int main()
         int column = 1;
         while (column <= row)
         {
-            printf("%d  ", row - column + 1);
+            char ch = 'A' - 1 + n - row + column;
+            printf("%c  ", ch);
             column += 1;
         }
         row += 1;
