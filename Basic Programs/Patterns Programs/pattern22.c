@@ -1,13 +1,13 @@
 /*
 WAP to print the following patter.
-1  2  3  4
-   2  3  4
-      3  4
+1  1  1  1
+   2  2  2
+      3  3
          4
 */
 
 #include <stdio.h>
-void main()
+int main()
 {
     int n;
     printf("\n Enter the Number of Rows: ");
@@ -15,21 +15,20 @@ void main()
     int row = 1;
     while (row <= n)
     {
-        int space = row - 1;
-        while (space > 0)
+        int space = 1;
+        while (space < row)
         {
-            printf(" ");
-            space -= 1;
+            printf("  ");
+            space += 1;
         }
-        int column = n - row + 1;
-        int value = row;
-        while (column > 0)
+        int column = n;
+        while (column >= row)
         {
-            printf("%d ", value);
-            value++;
+            printf("%d ", row);
             column -= 1;
         }
         row += 1;
         printf("\n");
     }
+    return 0;
 }

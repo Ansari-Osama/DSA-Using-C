@@ -4,6 +4,7 @@ WAP to print the following patter.
    2  3  4
       3  4
          4
+Note:- Logic is little different than others.
 */
 
 #include <stdio.h>
@@ -18,7 +19,7 @@ void main()
         int space = row - 1;
         while (space > 0)
         {
-            printf(" ");
+            printf("  ");
             space -= 1;
         }
         int column = n - row + 1;
